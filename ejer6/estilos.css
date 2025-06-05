@@ -1,0 +1,23 @@
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+td, th{
+    padding: 10px;
+}
+table{
+    width: 100%;
+    text-align: center;
+}
+
+#celda2_2{
+    background-color: blueviolet;
+}
+
+#colum-2 {
+    background-color: red;
+}
+
+#colum-1 {
+    background-color: yellow;
+}

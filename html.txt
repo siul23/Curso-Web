@@ -1,0 +1,48 @@
+h1 <> titulos dentro del header - insite BODY
+
+h3 <> subtitulos
+
+h6 <> footer
+
+br  salto de linea
+
+hr  linea
+
+nav <> menu, type BLOCK
+
+cursiva 
+
+i normal
+em <> resalto web
+
+negrita
+
+b <> normal
+strong <> resalto web
+
+p <> parrafo
+
+article <> after body and header
+
+ol <>  orden list  (add REVERSED to reverse orden) and STAR =  "498"
+
+tachado text decoratio | line through
+
+border | top, (derecha) right, left.
+
+div <> Sin contenido semantico a diferencia de etiqueta nav.
+
+blockquote <> es para crear un bloque tipo padding. Parecida a al funcion de P but on block
+
+width, text aling...el ancho y alinear alinear imagen, texto.
+
+
+
+
+ 
+
+
+
+
+
+

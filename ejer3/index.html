@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado de la Competencia</title>
+    <style>
+        body{
+
+            font-size: 20px;
+        }
+        article{
+
+            font-size: 30px;
+        }
+        /*Asignar un color a etiqueta P*/
+        p{
+            color: rgb(0, 94, 62);
+
+            /*Estilo de letra*/
+            font-style: italic;
+            font-size: 1 rem;
+            padding: 10px 5px 20px 3px;
+            margin: 0px;
+        }
+
+        /*Asignar un color a etiqueta h1*/
+        h1{
+            color: rgb(30, 200, 255);
+            font-family: monospace;
+            border: 2px ridge lightcoral;
+            margin: 10px 5px;
+
+
+        }
+
+        /*Asignar un color a etiqueta h3*/
+        h3{
+            color: #3A7BD5;
+            /*Linea arriba*/
+            text-decoration: overline;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /*Asignar un color a etiqueta li*/
+        li{
+            color: rgba(0, 68, 255, 0.5);
+        }
+
+        /*Asignar un color a etiqueta exclusiva ID (li)*/
+        #campeon{
+            color: rgba(145, 255, 0, 0.5);
+            font-weight: 900;
+            /*Tachado*/
+            text-decoration: line-through;
+        }
+
+        /*Asignar un color a etiquetas | clase mujer (li)*/
+        .mujer{
+            color: blueviolet;
+            text-decoration: underline overline;
+            
+        }
+        #beni{
+            border-top: 4px solid red;
+            border-right: 3px dashed green;
+            border-bottom: 1px double black;
+            border-left: 3px dashed green;
+
+            padding-top: 10px;
+            /*espacio entre el Beni y La paz (hacia abajo)*/
+            margin-bottom: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>
+            Resultados de la Competencia
+        </h1>
+    </header>
+    <article>
+        <p>
+            La competencia se ha realizado en Warnes con 500 participantes.
+        </p>
+        <h3>Las primeras posiciones de la competencia</h3>
+        <ol reversed>
+            <li class="mujer">Paula</li>
+            <li>Mario</li>
+            <li class="mujer">Maria</li> 
+            <li>Jose</li>
+            <li id="campeon">Luis</li>
+        </ol>
+    </article>
+    <article>
+        <h3>Lugares de origen de los participantes son</h3>
+
+        <ul>
+            <li>Potosi</li>
+            <li>Pando</li>
+            <li id="beni">Beni</li>
+            <li>La paz</li>
+            <li>Lizaca</li>
+            <li>Tarija</li>
+            
+        </ul>
+    </article>
+    <article>
+        <h3>Ultimos tres lugares</h3>
+
+        <ol start="498">
+            <li class="mujer">Ruth</li>
+            <li>Omar</li>
+            <li>Camilo</li>
+        </ol>
+
+    </article>
+
+</body>
+</html>

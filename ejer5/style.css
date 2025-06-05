@@ -1,0 +1,27 @@
+table,th,td {
+    border: solid, black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+tr {
+    background-color: gainsboro;
+    text-align: center;
+    color: darkgoldenrod;
+}
+
+th{
+    background-color: beige;
+    color: rgb(255, 205, 69);
+}
+
+tr:hover {
+    background-color: yellowgreen;
+}

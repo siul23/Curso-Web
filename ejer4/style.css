@@ -1,0 +1,74 @@
+body{
+    margin: 0px;
+}
+
+nav{
+    background-color: #a1a1f7;
+    width: 325px;
+    text-align: center
+}
+
+.cita{
+    padding: 30px;
+    border: 1px solid black;
+    margin: 17px;
+    width: 400px;
+    /*Bordes suavisados*/
+    border-radius: 10px 40px;
+}
+
+.cita > p{
+    text-align: right;
+    margin-bottom: 0px;
+}
+
+/*Esto, caso de que haya un solo "blockquote" dentro de una clase. Si existen dos o mas, se utiliza (ID, CLASS)*/
+.cita > blockquote{
+    margin: 0px;
+}
+
+nav > img{
+    margin: auto;
+}
+
+.navegacion{
+    list-style-type: none;
+    padding-left: 0px;
+    margin: 0px;
+    border-top: 2px solid black;
+}
+.navegacion > li{
+    border-bottom: 2px solid black;
+    padding: 10px;
+    color: beige;
+    background-color: #8383ff;
+}
+
+.navegacion > .color2, .navegacion > .color4{
+    background-color: #a1a1f7;
+}
+
+.hola a{
+    text-decoration: none; /* Quita el subrayado */
+    display: block; /*cpnvierte el enlace en bloque*/
+  }
+
+.hola a{
+    color: beige;
+}
+
+.hola a:hover{
+    color: rgb(201, 201, 201);
+}
+
+.navegacion li:hover{
+    background-color: rgba(0, 0, 255, 0.5);
+    color: rgb(1, 18, 75);
+    cursor: pointer;
+}
+
+.cita:hover{
+    background-color: rgba(0, 0, 255, 0.5);
+    color: beige;
+}
+
