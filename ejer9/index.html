@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Qeen</h1>
+    </header>
+
+    <article>
+        <h2>Ve el video del concierto en vivo</h2>
+        <!-- inserta para el video -->
+         <video controls muted poster="/video/poster.png">
+            <source src="/video/queen.webm">
+            <source src="/video/queen.mkv">
+            <source src="/video/queen.m4v">
+            Lo sentimos, video no soportado en su navegador.
+         </video>
+         <h2>Escucha el audio de la canción</h2>
+         <!-- inserta el audio -->
+          <audio controls loop muted>
+            <source src="/audio/sample.wav">
+            <source src="/audio/sample.ogg">
+            <source src="/audio/sample.mp3">
+            Lo sentimos, audio no soportado en su navegador.
+          </audio>
+    </article>
+
+</body>
+</html>
