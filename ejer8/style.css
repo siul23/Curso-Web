@@ -1,0 +1,57 @@
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    margin: 0px;
+    background-image: url(bg1.jpeg);
+    background-repeat: repeat-y; /*para que no se repita la imagen */
+    background-size: cover;/* con "cover" la imagen cubre toda la pantalla sin importar el zoom */
+    background-position: left top;
+}
+
+h1{
+    padding: 16px;
+    margin: 0px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+#titulo{
+    border: 3px solid black;
+    width: 60%;
+    margin: auto;
+    margin-top: 30px;
+    background-image: url(ceramica/ceramica1.jpg);
+    background-size: contain;
+    background-repeat: repeat;
+    background-position: center center;
+}
+
+
+h2{
+    padding-top: 60px;
+    padding-left: 90px;
+}
+
+#ceramica2{
+    background-image: url(ceramica/ceramica2.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+p{
+    color: white;
+    font-size: 18px;
+    padding-top: 500px;
+    padding-left: 200px;
+    padding-bottom: 100px;
+}
+
+#ceramica3{
+    background-image: url(ceramica/ceramica3.jpg);
+    background-repeat: no-repeat;
+    background-position: 800px center;
+}
+
