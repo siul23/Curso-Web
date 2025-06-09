@@ -1,0 +1,5 @@
+h1{
+    background-color: aqua;
+    display: inline-block; /* en este caso hace que "h1" tenga las caracteristas de linea y bloque. */
+    margin-top: 100px;
+}
