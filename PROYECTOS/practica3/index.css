@@ -1,0 +1,119 @@
+@font-face{ /* forma de importar images */
+    font-family: 'Epilogue';
+    src: url(/fonts/Epilogue.ttf) format(truetype)
+}
+
+@font-face{
+    font-family: 'Roboto';
+    src: url(/fonts/Roboto.ttf) format(truetype)
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-size: 16px;
+    background-color: #F0F4FD;
+}
+
+h1,h2,h3{
+    font-family: 'Epilogue';
+}
+
+p{
+    font-family: 'Roboto';
+}
+
+button{
+    color: white;
+    font-family: 'Roboto';
+    background-color: #EC3D08;
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+button:active{
+    background-color: #ff5927;
+}
+
+/* estilos de header */
+header{
+    background-color: #EC3D08;
+    height: 5rem;
+    line-height: 5rem;
+    position: relative;
+}
+
+header > nav{
+    display: inline-block;
+    position: absolute;
+    right: 4rem;
+}
+
+header > nav > ul{
+    display: inline;
+    margin: 0px;
+    list-style-type: none;
+}
+
+header > nav > ul > li{
+    display: inline;
+    padding-left: 1.5rem;
+}
+
+header > nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto';
+}
+
+#logo{
+    width: 45px;
+    vertical-align: middle;
+    padding-left: 3rem; 
+}
+
+/* estilizado banner */
+#banner{
+    background-image: url(/img/fondo_banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: calc(100vh - 5rem);
+}
+
+#banner div:first-child h1, #banner div:first-child p{
+    margin: 0px;
+    color: white;
+}
+
+#banner > div{
+    display: inline-block;
+    width: 47%;
+    height: 47%;
+}
+
+#banner > div:nth-of-type(2) > img{
+    height: 70%;
+    max-width: 90%;
+}
+
+#banner h1{
+    font-size: 4rem;
+    padding-bottom: 0.7rem;
+}
+
+#banner p{
+    font-size: 1rem;
+    padding-bottom: 0.3rem;
+}
+
+#banner > div:first-child > div:nth-of-type(2){
+    margin-bottom: 1rem;
+}
+
+#banner > div:first-child{
+    height: auto;
+}
