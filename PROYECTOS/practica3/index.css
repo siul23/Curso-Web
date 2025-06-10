@@ -114,6 +114,29 @@ header > nav > ul > li > a{
     margin-bottom: 1rem;
 }
 
-#banner > div:first-child{
-    height: auto;
+#banner > div:nth-of-type(1){
+    height: 100%;
+    vertical-align: top;
+    position: relative;
 }
+
+#banner > div:nth-of-type(1) > div:first-child{
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+#banner > div:nth-of-type(1) > div:nth-of-type(2){
+    position: absolute;
+    top: calc(20% + 11.4rem);
+    left: 15%;
+}
+
+/* posicionar el boton... */
+#banner button{
+    position: absolute;
+    left: 15%;
+    top: calc(31% + 11.4rem );
+}
+
+/* en progreso... */
