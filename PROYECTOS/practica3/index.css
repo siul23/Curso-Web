@@ -91,8 +91,8 @@ header > nav > ul > li > a{
 
 #banner > div{
     display: inline-block;
-    width: 47%;
-    height: 47%;
+    width: 50%;
+    height: 100%;
 }
 
 #banner > div:nth-of-type(2) > img{
@@ -139,4 +139,14 @@ header > nav > ul > li > a{
     top: calc(31% + 11.4rem );
 }
 
-/* en progreso... */
+#banner > div:nth-of-type(2){
+    position: relative;
+}
+
+#banner > div:nth-of-type(2) > img{
+    position: absolute;
+    top: 10%;
+}
+
+/* SEGUNDA SESIÓN */
+
