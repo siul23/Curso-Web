@@ -150,3 +150,52 @@ header > nav > ul > li > a{
 
 /* SEGUNDA SESIÓN */
 
+/* estilos */
+#destacados > h2{
+    margin: 0px;
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    color: rgb(0, 0, 0);
+    font-size: 1.6rem;
+}
+
+#destacados > div{
+    width: 80vw;
+    height: 40vh;
+    background-image: url(img/fondo-card.png);
+    background-size: cover;
+    margin: 1rem auto;
+    border-radius: 1rem;
+}
+
+#destacados >div:nth-of-type(odd){
+    background-color: #FFB936;
+}
+
+#destacados >div:nth-of-type(even){
+    background-color: #EC3D08;
+    color: white;
+}
+
+#destacados > div > img{
+    height: 80%;
+}
+
+#destacados > div > div{
+    width: 60%;
+}
+
+#destacados > div > span{
+    color: white;
+    background-color:black;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+} 
+
+#destacados > div h3{
+    margin: 0px 0px 1rem 0px;
+    font-size: 1.4rem;
+}
+
+/* etiquetas p */
