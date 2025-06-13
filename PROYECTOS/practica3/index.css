@@ -149,6 +149,24 @@ header > nav > ul > li > a{
 }
 
 /* SEGUNDA SESIÓN */
+#destacados {
+    position: relative;
+}
+
+/* papas, hamburguesa fondos */
+.img-fondo{
+    position: absolute;
+}
+
+.papas-fondo{
+    top: 1rem;
+    right: 3.5rem;
+}
+
+.hamburguesa-fondo{
+    bottom: 1rem;
+    left: 0rem;
+}
 
 /* estilos */
 #destacados > h2{
@@ -156,7 +174,7 @@ header > nav > ul > li > a{
     text-align: center;
     padding-top: 3rem;
     padding-bottom: 2rem;
-    color: rgb(0, 0, 0);
+    color: #000000;
     font-size: 1.6rem;
 }
 
@@ -167,6 +185,8 @@ header > nav > ul > li > a{
     background-size: cover;
     margin: 1rem auto;
     border-radius: 1rem;
+    position: relative;
+    z-index: 1;
 }
 
 #destacados >div:nth-of-type(odd){
@@ -179,11 +199,17 @@ header > nav > ul > li > a{
 }
 
 #destacados > div > img{
+    position: absolute;
+    top: 10%;
+    left: 5%;
     height: 80%;
 }
 
 #destacados > div > div{
     width: 60%;
+    position: absolute;
+    top : 20%;
+    left: 35%;
 }
 
 #destacados > div > span{
@@ -191,6 +217,9 @@ header > nav > ul > li > a{
     background-color:black;
     padding: 0.5rem;
     border-radius: 0.5rem;
+    position: absolute;
+    top: 50%;
+    left: 5%;
 } 
 
 #destacados > div h3{
@@ -199,3 +228,26 @@ header > nav > ul > li > a{
 }
 
 /* etiquetas p */
+
+#destacados > div p{
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+
+/* TERCERA SESIÓN */
+
+#nosotros{
+    height: 60%vh;
+}
+
+#nosotros > div{
+    width: 30%;
+    margin: auto;
+}
+
+#nosotros > img{
+    max-height: 100%;
+}
+
+/* continuará 🐱‍👤 */
