@@ -1,11 +1,12 @@
-@font-face{ /* forma de importar images */
+/* Importación de tipos de letra */
+@font-face {
     font-family: 'Epilogue';
-    src: url(/fonts/Epilogue.ttf) format(truetype)
+    src: url('./fonts/Epilogue.ttf') format('truetype');
 }
 
-@font-face{
+@font-face {
     font-family: 'Roboto';
-    src: url(/fonts/Roboto.ttf) format(truetype)
+    src: url('./fonts/Roboto.ttf') format('truetype');
 }
 
 html, body{
@@ -15,10 +16,10 @@ html, body{
     margin: 0px;
     font-size: 16px;
     background-color: #F0F4FD;
-    overflow-x: hiddenf;
+    overflow-x: hidden;
 }
 
-h1,h2,h3{
+h1, h2, h3{
     font-family: 'Epilogue';
 }
 
@@ -27,31 +28,30 @@ p{
 }
 
 button{
-    color: white;
     font-family: 'Roboto';
     background-color: #EC3D08;
-    border: solid black 1px;
-    padding: 10px;
-    border-radius: 5px;
+    color: white;
+    padding: 0.7rem;
+    border-radius: 0.4rem;
+    border: black solid 1px;
     transition: all 0.2s ease-in-out;
     cursor: pointer;
     &:hover{
-        transform: scanle(1.1);
+        transform: scale(1.1);
     }
     &:active{
-        background-color: #ff5927;
         transform: scale(0.9);
+        background-color: #DB5E38FF;
     }
 }
 
 
-
-/* estilos de header */
+/* Estilos del header */
 header{
     background-color: #EC3D08;
     height: 5rem;
     line-height: 5rem;
-    position: relative;
+
     position: sticky;
     top: 0px;
     z-index: 100;
@@ -65,158 +65,152 @@ header > nav{
 
 header > nav > ul{
     display: inline;
-    margin: 0px;
-    list-style-type: none;
+    padding: 0px;  
 }
 
 header > nav > ul > li{
     display: inline;
+}
+
+header > nav > ul > li{
     padding-left: 1.5rem;
 }
 
 header > nav > ul > li > a{
     text-decoration: none;
-    color: white;
+    color: white; 
     font-family: 'Roboto';
 }
 
 #logo{
     width: 45px;
     vertical-align: middle;
-    padding-left: 3rem; 
+    padding-left: 3rem;
 }
 
-/* estilizado banner */
+/* Estilos del primer section */
 #banner{
-    background-image: url(/img/fondo_banner.jpg);
+    background-image: url("img/fondo_banner.jpg");
     background-position: center center;
-    background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     height: calc(100vh - 5rem);
-}
-
-#banner div:first-child h1, #banner div:first-child p{
-    margin: 0px;
-    color: white;
+    width: 100%;
 }
 
 #banner > div{
     display: inline-block;
     width: 50%;
-    height: 100%;
-}
-
-#banner > div:nth-of-type(2) > img{
-    height: 70%;
-    max-width: 90%;
-}
-
-#banner h1{
-    font-size: 4rem;
-    padding-bottom: 0.7rem;
-}
-
-#banner p{
-    font-size: 1rem;
-    padding-bottom: 0.3rem;
-}
-
-#banner > div:first-child > div:nth-of-type(2){
-    margin-bottom: 1rem;
-}
-
-#banner > div:nth-of-type(1){
-    height: 100%;
     vertical-align: top;
-    position: relative;
+    height: 100%;   
 }
 
-#banner > div:nth-of-type(1) > div:first-child{
+#banner > div:first-child{
+    color: white;
+    position: relative; 
+}
+
+#banner > div:first-child > div:first-child{
     position: absolute;
     top: 20%;
     left: 15%;
 }
 
-#banner > div:nth-of-type(1) > div:nth-of-type(2){
+#banner > div:first-child > div:nth-of-type(2){
+    height: auto;
+    margin-bottom: 1rem;
     position: absolute;
-    top: calc(20% + 11.4rem);
+    top: calc(20% + 8rem + 1.4rem + 2rem);
     left: 15%;
 }
 
-/* posicionar el boton... */
-#banner button{
-    position: absolute;
-    left: 15%;
-    top: calc(31% + 11.4rem );
-}
-
-#banner > div:nth-of-type(2){
+#banner div:nth-of-type(2){
+    height: 100%;
     position: relative;
 }
 
-#banner > div:nth-of-type(2) > img{
+#banner div:nth-of-type(2) img{
+    height: 70%;
+    max-width: 90%;
     position: absolute;
     top: 10%;
+    left: 1%;  
 }
 
-/* SEGUNDA SESIÓN */
-#destacados {
-    position: relative;
-}
-
-/* papas, hamburguesa fondos */
-.img-fondo{
-    position: absolute;
-}
-
-.papas-fondo{
-    top: 1rem;
-    right: 3.5rem;
-}
-
-.hamburguesa-fondo{
-    bottom: 1rem;
-    left: 0rem;
-}
-
-/* estilos */
-#destacados > h2{
+#banner div:first-child h1, #banner div:first-child p{
     margin: 0px;
-    text-align: center;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
-    color: #000000;
-    font-size: 1.6rem;
 }
 
-#destacados > div{
-    width: 80vw;
-    height: 40vh;
-    background-image: url(img/fondo-card.png);
-    background-size: cover;
-    margin: 1rem auto;
-    border-radius: 1rem;
+#banner div:first-child h1{
+    font-size: 4rem;
+    margin-bottom: 0.7rem;
+}
+
+#banner div:first-child p{
+    font-size: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+#banner div:first-child button{
+    position: absolute;
+    top: calc(20% + 8rem + 1.4rem + 0.6rem + 2rem + 11%);
+    left: 15%;
+}
+
+/* Estilos del segundo section */
+#destacados{
+    padding-bottom: 3rem;
     position: relative;
-    z-index: 1;
 }
 
-#destacados >div:nth-of-type(odd){
+#destacados h2{
+    text-align: center;
+    color: #010F1C;
+    font-size: 1.6rem;
+    margin: 0px;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+
+#destacados > div:nth-of-type(odd) {
     background-color: #FFB936;
 }
 
-#destacados >div:nth-of-type(even){
+#destacados > div:nth-of-type(even) {
     background-color: #EC3D08;
     color: white;
 }
 
+#destacados > div h3{
+    margin: 0px 0px 1rem 0px;
+    font-size: 1.4rem;
+}
+
+#destacados > div p{
+    margin: 0px;
+    font-size: 1.2rem;
+}
+
+#destacados > div{
+    margin: 1rem auto;
+    border-radius: 1rem;
+    background-image: url("img/fondo-card.png");
+    background-size: cover;
+    height: 40vh;
+    width: 80vw;
+    position: relative;
+    z-index: 1;
+}
+
 #destacados > div > img{
-    position: absolute;
-    top: 10%;
-    left: 5%;
     height: 80%;
-    transition: all 0.3s ease-in-out;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    cursor: pointer;
+    transition: all 0.4s ease-in-out;
     &:hover{
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     &:active{
         transform: scale(0.9);
@@ -226,59 +220,31 @@ header > nav > ul > li > a{
 #destacados > div > div{
     width: 60%;
     position: absolute;
-    top : 20%;
+    top: 20%;
     left: 35%;
 }
 
 #destacados > div > span{
+    position: inline-block;
+    background-color: black;
     color: white;
-    background-color:black;
     padding: 0.5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.4rem;
     position: absolute;
-    top: 50%;
+    top: 10%;
     left: 5%;
-} 
-
-#destacados > div h3{
-    margin: 0px 0px 1rem 0px;
-    font-size: 1.4rem;
+    top: 50%;
 }
 
-/* etiquetas p */
-
-#destacados > div p{
-    margin: 0px;
-    font-size: 1.2rem;
-}
-
-
-/* TERCERA SESIÓN */
-
+/* Estilos del tercer section */
 #nosotros{
-    height: 60%vh;
     position: relative;
-}
-
-#nosotros > div{
-    width: 30%;
-    margin: auto;
-    text-align: center;
-    padding-top: 3rem;
+    height: 60vh; 
 }
 
 #nosotros > img{
     max-height: 100%;
-    position:absolute;
-}
-
-#nosotros > div > h2{
-    font-size: 1rem;
-    color: #EC3D08;
-}
-
-#nosotros > div > h4{
-    font-size: 1.3rem;
+    position: absolute;
 }
 
 #nosotros > img:nth-of-type(1){
@@ -291,19 +257,61 @@ header > nav > ul > li > a{
     top: 0px;
 }
 
-/* style footer */
+#nosotros > div{
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    padding-top: 3rem;
+}
 
+#nosotros > div > h2{
+    color: #EC3D08;
+    font-size: 1rem;
+}
+
+#nosotros > div > h4{
+    font-size: 1.3rem;
+}
+
+/* Cuarto Section */
+/* Aquí deben ir los estilos CSS del cuarto section */
+
+/* Pie de página */
 footer{
-    margin-top: 3rem;
     height: 5rem;
     font-family: 'Roboto';
     text-align: center;
     background-color: #EC3D08;
     color: white;
     line-height: 5rem;
+    margin-top: 3rem;
 }
 
-/* div flotante wsp */
+/* Div flotante */
+#div-flotante img{
+    width: 5rem;
+}
+
+#div-flotante{
+    position: fixed;
+    bottom: 6rem;
+    right: 3rem;
+}
+
+/*Iconos flotantes en el logo*/
+.img-fondo{
+    position: absolute;
+}
+
+.papas-fondo{
+    top: 1rem;
+    right: 2rem;
+}
+
+.hamburguesa-fondo{
+    bottom: 1rem;
+    left: 0rem;
+}
 
 #div-flotante img{
     width: 3rem;
@@ -313,6 +321,7 @@ footer{
     position: fixed;
     bottom: 3rem;
     right: 3rem;
+    cursor: pointer;
     transition: all 0.3s ease-in-out;
     &:hover{
         transform: scale(1.4);
@@ -321,3 +330,28 @@ footer{
         transform: scale(0.9);
     }
 }
+
+#menu h2{
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+#menu > div img {
+    display:inline-block;
+    margin-left: 32rem;
+    margin-right: auto;
+}
+
+#menu span{
+    color: #EC3D08;
+    font-family: 'Roboto';
+    font-weight: 700;
+}
+
+#menu h3{
+    color: #010F1C;
+}
+
+
+
