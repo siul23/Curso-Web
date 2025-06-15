@@ -274,7 +274,61 @@ header > nav > ul > li > a{
 }
 
 /* Cuarto Section */
-/* Aquí deben ir los estilos CSS del cuarto section */
+#menu div {
+    width: 25vw;
+    margin: 1rem auto;
+    position: relative;
+}
+
+#menu h2 {
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+#menu > div {
+    position: relative;
+    margin-bottom: 1rem;
+    padding-right: 5rem;
+}
+
+#menu > div > img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    margin-right: 1rem;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+#menu h3 {
+    display: inline-block;
+    vertical-align: middle;
+    color: #010F1C;
+    margin: 0;
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+/* Precio */
+#menu span {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #EC3D08;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+#menu button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /* Pie de página */
 footer{
@@ -330,28 +384,3 @@ footer{
         transform: scale(0.9);
     }
 }
-
-#menu h2{
-    text-align: center;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-}
-
-#menu > div img {
-    display:inline-block;
-    margin-left: 32rem;
-    margin-right: auto;
-}
-
-#menu span{
-    color: #EC3D08;
-    font-family: 'Roboto';
-    font-weight: 700;
-}
-
-#menu h3{
-    color: #010F1C;
-}
-
-
-
